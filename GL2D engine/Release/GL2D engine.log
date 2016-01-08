@@ -1,0 +1,55 @@
+﻿Build started 1/7/2016 7:36:26 PM.
+     1>Project "C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\batchrenderer2d.cpp src\graphics\buffers\indexbuffer.cpp src\graphics\layers\layer.cpp src\graphics\layers\tilelayer.cpp src\graphics\simplerenderer2d.cpp src\graphics\sprite.cpp src\graphics\static_sprite.cpp
+         main.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
+                 C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\Dependencies\GLFW\include\GLFW/glfw3.h(85) : see previous definition of 'APIENTRY'
+     1>main.cpp(45): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+         batchrenderer2d.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\batchrenderer2d.cpp(61): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>src\graphics\batchrenderer2d.cpp(62): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>src\graphics\batchrenderer2d.cpp(63): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>src\graphics\batchrenderer2d.cpp(64): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+         indexbuffer.cpp
+         layer.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\layers\layer.cpp(14): warning C4018: '<' : signed/unsigned mismatch
+         tilelayer.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         simplerenderer2d.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         sprite.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         static_sprite.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.exe" /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.pdb" /STACK:"8000000" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Release\batchrenderer2d.obj
+         Release\buffer.obj
+         Release\indexbuffer.obj
+         Release\vertexarray.obj
+         Release\layer.obj
+         Release\tilelayer.obj
+         Release\renderable2d.obj
+         Release\shader.obj
+         Release\simplerenderer2d.obj
+         Release\sprite.obj
+         Release\static_sprite.obj
+         Release\window.obj
+         Release\mat4.obj
+         Release\vec2.obj
+         Release\vec3.obj
+         Release\vec4.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\vc120.pdb'; linking object as if no debug info
+         GL2D engine.vcxproj -> C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.exe
+     1>Done Building Project "C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.25
