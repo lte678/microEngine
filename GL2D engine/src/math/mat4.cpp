@@ -156,5 +156,12 @@ namespace sparky {
 
 			return result;
 		}
+
+		std::ostream& operator<<(std::ostream& stream, const mat4& matrix) {
+			return stream	<< std::setprecision(3) << "(" << matrix.columns[0].x << ",\t" << matrix.columns[1].x << ",\t" << matrix.columns[2].x << ",\t" << matrix.columns[3].x << ")" << std::endl
+							<< "(" << matrix.columns[0].y << ",\t" << matrix.columns[1].y << ",\t" << matrix.columns[2].y << ",\t" << matrix.columns[3].y << ")" << std::endl
+							<< "(" << matrix.columns[0].z << ",\t" << matrix.columns[1].z << ",\t" << matrix.columns[2].z << ",\t" << matrix.columns[3].z << ")" << std::endl
+							<< "(" << matrix.columns[0].w << ",\t" << matrix.columns[1].w << ",\t" << matrix.columns[2].w << ",\t" << matrix.columns[3].w << ")";
+		}
 	}
 }

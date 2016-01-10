@@ -2,6 +2,7 @@
 
 #include "vector.h"
 #include "utils.h"
+#include <iomanip>
 
 namespace sparky {
 	namespace math {
@@ -34,6 +35,8 @@ namespace sparky {
 			static mat4 translation(const vec3& translation);
 			static mat4 rotation(float angle, const vec3& axis);
 			static mat4 scale(const vec3& scale);
+
+			friend std::ostream& operator<<(std::ostream& stream, const mat4& matrix);
 		};
 	}
 }

@@ -14,11 +14,14 @@ int main() {
 	using namespace graphics;
 	using namespace math;
 
+	
 
 	Window window("GL program", 960, 540);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 	mat4 ortho = mat4::orthographic(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
+
+	std::cout << ortho << std::endl;
 
 	Shader shader("src/shaders/default.vert", "src/shaders/default.frag");
 	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
