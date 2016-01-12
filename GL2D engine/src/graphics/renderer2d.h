@@ -2,10 +2,13 @@
 
 
 #include <GL/glew.h>
-#include "renderable2d.h"
+#include <vector>
+#include "../math/vector.h"
 
 namespace sparky {
 	namespace graphics {
+
+		class Renderable2D;
 
 		class Renderer2D {
 		protected: 

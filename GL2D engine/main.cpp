@@ -9,6 +9,10 @@
 #include <time.h>
 #include "src/utils/timer.h"
 
+#include "src/graphics/layers/group.h"
+
+#define groups 1
+
 int main() {
 	using namespace sparky;
 	using namespace graphics;
@@ -21,19 +25,24 @@ int main() {
 
 	mat4 ortho = mat4::orthographic(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
 
-	std::cout << ortho << std::endl;
-
 	Shader shader("src/shaders/default.vert", "src/shaders/default.frag");
-	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
+	shader.setUniform2f("light_pos", vec2(-14.0f, 1.5f));
 
 	TileLayer layer(&shader);
 
+#if groups
+	Group* scene = new Group(mat4::translation(vec3(-15.0f, 5.0f, 0.0f)));
+
+	scene->add(new Sprite(0, 0, 6, 3, math::vec4(1, 0, 1, 1)));
+
+	layer.add(scene);
+#else
 	for (float y = -9.0f; y < 9.0f; y += 0.1f) {
 		for (float x = -16.0f; x < 16.0f; x += 0.1f) {
 			layer.add(new Sprite(x, y, 0.08f, 0.08f, math::vec4(0.2f, 0.2f, 0.6f, 1.0f)));
 		}
 	}
-
+#endif
 
 	Timer currentTime;
 

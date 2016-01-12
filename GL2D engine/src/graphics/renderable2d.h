@@ -6,6 +6,7 @@
 
 #include "../math/vector.h"
 #include "shader.h"
+#include "renderer2d.h"
 
 namespace sparky {
 	namespace graphics {
@@ -22,6 +23,9 @@ namespace sparky {
 			math::vec2 m_Size;
 			math::vec4 m_Color;
 
+			Renderable2D() {
+			}
+
 		public:
 			Renderable2D(math::vec3 position, math::vec2 size, math::vec4 color)
 				: m_Position(position), m_Size(size), m_Color(color) {
@@ -29,6 +33,10 @@ namespace sparky {
 			}
 
 			virtual ~Renderable2D() {
+			}
+
+			virtual void submit(Renderer2D* renderer) const {
+				renderer->submit(this);
 			}
 
 			inline const math::vec3& getPosition() const { return m_Position; }
