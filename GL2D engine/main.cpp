@@ -47,6 +47,8 @@ int main() {
 		window.getMousePosition(x, y);
 		shader.setUniform2f("light_pos", vec2(x / 30 - 16, 9 - (y / 30)));
 
+		
+
 		layer.render();
 
 		frames++;
