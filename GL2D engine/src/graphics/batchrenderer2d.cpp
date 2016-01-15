@@ -24,9 +24,11 @@ namespace sparky {
 
 			glEnableVertexAttribArray(SHADER_VERTEX_INDEX);
 			glEnableVertexAttribArray(SHADER_COLOR_INDEX);
+			glEnableVertexAttribArray(SHADER_UV_INDEX);
 
 			glVertexAttribPointer(SHADER_VERTEX_INDEX, 3, GL_FLOAT, GL_FALSE, RENDERER_VERTEX_SIZE, (const GLvoid*) 0);
 			glVertexAttribPointer(SHADER_COLOR_INDEX, 4, GL_UNSIGNED_BYTE, GL_TRUE, RENDERER_VERTEX_SIZE, (const GLvoid*)(offsetof(VertexData, VertexData::color)));
+			glVertexAttribPointer(SHADER_UV_INDEX, 2, GL_FLOAT, GL_FALSE, RENDERER_VERTEX_SIZE, (const GLvoid*)(offsetof(VertexData, VertexData::uv)));
 
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -68,18 +70,22 @@ namespace sparky {
 
 			m_Buffer->vertex = *m_TransformationBack * position;
 			m_Buffer->color = c;
+			m_Buffer->uv = math::vec2(0, 0);
 			m_Buffer++;
 
 			m_Buffer->vertex = *m_TransformationBack * math::vec3(position.x, position.y + size.y, position.z);
 			m_Buffer->color = c;
+			m_Buffer->uv = math::vec2(0, 1);
 			m_Buffer++;
 
 			m_Buffer->vertex = *m_TransformationBack * math::vec3(position.x + size.x, position.y + size.y, position.z);
 			m_Buffer->color = c;
+			m_Buffer->uv = math::vec2(1, 1);
 			m_Buffer++;
 
 			m_Buffer->vertex = *m_TransformationBack * math::vec3(position.x + size.x, position.y, position.z);
 			m_Buffer->color = c;
+			m_Buffer->uv = math::vec2(1, 0);
 			m_Buffer++;
 			
 			m_IndexCount += 6;

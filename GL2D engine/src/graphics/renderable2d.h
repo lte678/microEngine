@@ -13,6 +13,7 @@ namespace sparky {
 		
 		struct VertexData {
 			math::vec3 vertex;
+			math::vec2 uv;
 			//math::vec4 color;
 			unsigned int color;
 		};

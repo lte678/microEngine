@@ -10,8 +10,10 @@
 #include "src/utils/timer.h"
 
 #include "src/graphics/layers/group.h"
+#include "src/graphics/texture.h"
 
 #define groups 1
+
 
 int main() {
 	using namespace sparky;
@@ -31,10 +33,9 @@ int main() {
 	TileLayer layer(&shader);
 
 #if groups
-	Group* scene = new Group(mat4::translation(vec3(-15.0f, 5.0f, 0.0f)));
+	Group* scene = new Group(mat4::translation(vec3(-15.0f, 2.0f, 0.0f)));
 
-	scene->add(new Sprite(0, 0, 6, 3, math::vec4(1, 0, 1, 1)));
-
+	scene->add(new Sprite(0, 0, 6, 6, math::vec4(0, 1, 1, 1)));
 	layer.add(scene);
 #else
 	for (float y = -9.0f; y < 9.0f; y += 0.1f) {
@@ -43,6 +44,8 @@ int main() {
 		}
 	}
 #endif
+
+	Texture texture("biohazard.png");
 
 	Timer currentTime;
 
@@ -57,8 +60,11 @@ int main() {
 		shader.setUniform2f("light_pos", vec2(x / 30 - 16, 9 - (y / 30)));
 
 		
+		texture.bind();
 
 		layer.render();
+
+		texture.unbind();
 
 		frames++;
 		if (currentTime.elapsed() - timer > 1.0f) {
@@ -71,3 +77,4 @@ int main() {
 
 	return 0;
 }
+
