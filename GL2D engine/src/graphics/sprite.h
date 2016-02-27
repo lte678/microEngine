@@ -10,6 +10,7 @@ namespace sparky {
 
 		public:
 			Sprite(float x, float y, float width, float height, const math::vec4& color);
+			Sprite(float x, float y, float width, float height, Texture* texture);
 
 		};
 	}

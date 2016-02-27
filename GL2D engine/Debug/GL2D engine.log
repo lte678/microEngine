@@ -1,22 +1,62 @@
-﻿Build started 1/15/2016 3:18:59 PM.
-     1>Project "C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/27/2016 8:22:11 PM.
+     1>Project "C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
-                 c:\users\leon\documents\visual studio 2013\projects\gl2d engine\dependencies\glfw\include\glfw\glfw3.h(85) : see previous definition of 'APIENTRY'
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\main.cpp(60): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt src\graphics\window.cpp
+         window.cpp
+     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\graphics\window.cpp(57): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.pdb" /STACK:"8000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.lib" /MACHINE:X86 Debug\main.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.pdb" /STACK:"8000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.lib" /MACHINE:X86 Debug\platform.obj
+         "Debug\texture-atlas.obj"
+         "Debug\texture-font.obj"
+         Debug\vector.obj
+         Debug\autofit.obj
+         Debug\ftbase.obj
+         Debug\ftbbox.obj
+         Debug\ftbitmap.obj
+         Debug\ftdebug.obj
+         Debug\ftfstype.obj
+         Debug\ftgasp.obj
+         Debug\ftglyph.obj
+         Debug\ftgxval.obj
+         Debug\ftinit.obj
+         Debug\ftlcdfil.obj
+         Debug\ftmm.obj
+         Debug\ftotval.obj
+         Debug\ftpatent.obj
+         Debug\ftpfr.obj
+         Debug\ftstroke.obj
+         Debug\ftsynth.obj
+         Debug\ftsystem.obj
+         Debug\fttype1.obj
+         Debug\ftwinfnt.obj
+         Debug\ftxf86.obj
+         Debug\bdf.obj
+         Debug\ftcache.obj
+         Debug\cff.obj
+         Debug\type1cid.obj
+         Debug\ftgzip.obj
+         Debug\ftlzw.obj
+         Debug\pcf.obj
+         Debug\pfr.obj
+         Debug\psaux.obj
+         Debug\pshinter.obj
+         Debug\psmodule.obj
+         Debug\raster.obj
+         Debug\sfnt.obj
+         Debug\smooth.obj
+         Debug\truetype.obj
+         Debug\type1.obj
+         Debug\type42.obj
+         Debug\winfnt.obj
+         Debug\main.obj
          Debug\batchrenderer2d.obj
          Debug\buffer.obj
          Debug\indexbuffer.obj
          Debug\vertexarray.obj
+         Debug\label.obj
          Debug\group.obj
          Debug\layer.obj
          Debug\tilelayer.obj
-         Debug\renderable2d.obj
          Debug\shader.obj
          Debug\simplerenderer2d.obj
          Debug\sprite.obj
@@ -27,10 +67,10 @@
          Debug\vec2.obj
          Debug\vec3.obj
          Debug\vec4.obj
-         GL2D engine.vcxproj -> C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.exe
+         GL2D engine.vcxproj -> C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.exe
        BscMake:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.bsc" /n Debug\main.sbr Debug\batchrenderer2d.sbr Debug\buffer.sbr Debug\indexbuffer.sbr Debug\vertexarray.sbr Debug\group.sbr Debug\layer.sbr Debug\tilelayer.sbr Debug\renderable2d.sbr Debug\shader.sbr Debug\simplerenderer2d.sbr Debug\sprite.sbr Debug\static_sprite.sbr Debug\texture.sbr Debug\window.sbr Debug\mat4.sbr Debug\vec2.sbr Debug\vec3.sbr Debug\vec4.sbr
-     1>Done Building Project "C:\Users\leon\Documents\Visual Studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" (Build target(s)).
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Debug\GL2D_core.bsc" /n Debug\platform.sbr "Debug\texture-atlas.sbr" "Debug\texture-font.sbr" Debug\vector.sbr Debug\autofit.sbr Debug\ftbase.sbr Debug\ftbbox.sbr Debug\ftbitmap.sbr Debug\ftdebug.sbr Debug\ftfstype.sbr Debug\ftgasp.sbr Debug\ftglyph.sbr Debug\ftgxval.sbr Debug\ftinit.sbr Debug\ftlcdfil.sbr Debug\ftmm.sbr Debug\ftotval.sbr Debug\ftpatent.sbr Debug\ftpfr.sbr Debug\ftstroke.sbr Debug\ftsynth.sbr Debug\ftsystem.sbr Debug\fttype1.sbr Debug\ftwinfnt.sbr Debug\ftxf86.sbr Debug\bdf.sbr Debug\ftcache.sbr Debug\cff.sbr Debug\type1cid.sbr Debug\ftgzip.sbr Debug\ftlzw.sbr Debug\pcf.sbr Debug\pfr.sbr Debug\psaux.sbr Debug\pshinter.sbr Debug\psmodule.sbr Debug\raster.sbr Debug\sfnt.sbr Debug\smooth.sbr Debug\truetype.sbr Debug\type1.sbr Debug\type42.sbr Debug\winfnt.sbr Debug\main.sbr Debug\batchrenderer2d.sbr Debug\buffer.sbr Debug\indexbuffer.sbr Debug\vertexarray.sbr Debug\label.sbr Debug\group.sbr Debug\layer.sbr Debug\tilelayer.sbr Debug\shader.sbr Debug\simplerenderer2d.sbr Debug\sprite.sbr Debug\static_sprite.sbr Debug\texture.sbr Debug\window.sbr Debug\mat4.sbr Debug\vec2.sbr Debug\vec3.sbr Debug\vec4.sbr
+     1>Done Building Project "C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" (Build target(s)).
 
 Build succeeded.
 

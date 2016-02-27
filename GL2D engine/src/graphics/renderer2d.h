@@ -3,6 +3,7 @@
 
 #include <GL/glew.h>
 #include <vector>
+#include "texture.h"
 #include "../math/vector.h"
 
 namespace sparky {
@@ -39,10 +40,11 @@ namespace sparky {
 				m_TransformationBack = &m_TransformationStack.back();
 			}
 
-			virtual void begin() = 0;
+			virtual void begin() { };
 			virtual void submit(const Renderable2D* renderable) = 0;
+			virtual void drawString(const std::string& text, const math::vec3& position, const math::vec4& color) { };
 			virtual void flush() = 0;
-			virtual void end() = 0;
+			virtual void end() { };
 		};
 
 	}

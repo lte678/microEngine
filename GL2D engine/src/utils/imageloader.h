@@ -3,7 +3,7 @@
 #include <FreeImage.h>
 
 namespace sparky {
-	static BYTE* load_image(const char* filename, GLsizei* width, GLsizei* height) {
+	static BYTE* load_image(const char* filename, GLsizei* width, GLsizei* height, int* BPP) {
 		FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
 		FIBITMAP *dib = nullptr;
 		fif = FreeImage_GetFileType(filename, 0);
@@ -22,6 +22,7 @@ namespace sparky {
 		}
 
 		BYTE* result = FreeImage_GetBits(dib);
+		*BPP = FreeImage_GetBPP(dib);
 		*width = FreeImage_GetWidth(dib);
 		*height = FreeImage_GetHeight(dib);
 

@@ -4,6 +4,8 @@
 #include <string>
 #include <GL/glew.h>
 
+#include <iostream>
+
 #include "../utils/imageloader.h"
 
 namespace sparky {
@@ -14,6 +16,7 @@ namespace sparky {
 			std::string m_Filename;
 			GLuint m_TID;
 			GLsizei m_Width, m_Height;
+			int m_BBP;
 		public:
 			Texture(const std::string& filename);
 			~Texture();
@@ -23,6 +26,7 @@ namespace sparky {
 
 			inline const unsigned int getWidth() const { return m_Width; }
 			inline const unsigned int getHeight() const { return m_Height; }
+			inline const unsigned int getID() const { return m_TID; }
 		private:
 			GLuint load();
 		};

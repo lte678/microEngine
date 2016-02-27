@@ -1,43 +1,68 @@
-﻿Build started 1/7/2016 7:36:26 PM.
+﻿Build started 2/26/2016 12:46:24 PM.
      1>Project "C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\GL2D engine\GL2D engine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\batchrenderer2d.cpp src\graphics\buffers\indexbuffer.cpp src\graphics\layers\layer.cpp src\graphics\layers\tilelayer.cpp src\graphics\simplerenderer2d.cpp src\graphics\sprite.cpp src\graphics\static_sprite.cpp
-         main.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\graphics\layers\group.cpp
+         group.cpp
      1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY' : macro redefinition
-                 C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\Dependencies\GLFW\include\GLFW/glfw3.h(85) : see previous definition of 'APIENTRY'
-     1>main.cpp(45): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-         batchrenderer2d.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>src\graphics\batchrenderer2d.cpp(61): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
-     1>src\graphics\batchrenderer2d.cpp(62): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
-     1>src\graphics\batchrenderer2d.cpp(63): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
-     1>src\graphics\batchrenderer2d.cpp(64): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
-         indexbuffer.cpp
-         layer.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>src\graphics\layers\layer.cpp(14): warning C4018: '<' : signed/unsigned mismatch
-         tilelayer.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         simplerenderer2d.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         sprite.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-         static_sprite.cpp
-     1>c:\users\leon\documents\visual studio 2013\projects\gl2d engine\gl2d engine\src\math\utils.h(7): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\layers\group.cpp(12): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.exe" /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.pdb" /STACK:"8000000" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.exe" /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.pdb" /STACK:"8000000" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\leon\documents\visual studio 2013\Projects\GL2D engine\bin\Release\GL2D_core.lib" /MACHINE:X86 /SAFESEH Release\platform.obj
+         "Release\texture-atlas.obj"
+         "Release\texture-font.obj"
+         Release\vector.obj
+         Release\autofit.obj
+         Release\ftbase.obj
+         Release\ftbbox.obj
+         Release\ftbitmap.obj
+         Release\ftdebug.obj
+         Release\ftfstype.obj
+         Release\ftgasp.obj
+         Release\ftglyph.obj
+         Release\ftgxval.obj
+         Release\ftinit.obj
+         Release\ftlcdfil.obj
+         Release\ftmm.obj
+         Release\ftotval.obj
+         Release\ftpatent.obj
+         Release\ftpfr.obj
+         Release\ftstroke.obj
+         Release\ftsynth.obj
+         Release\ftsystem.obj
+         Release\fttype1.obj
+         Release\ftwinfnt.obj
+         Release\ftxf86.obj
+         Release\bdf.obj
+         Release\ftcache.obj
+         Release\cff.obj
+         Release\type1cid.obj
+         Release\ftgzip.obj
+         Release\ftlzw.obj
+         Release\pcf.obj
+         Release\pfr.obj
+         Release\psaux.obj
+         Release\pshinter.obj
+         Release\psmodule.obj
+         Release\raster.obj
+         Release\sfnt.obj
+         Release\smooth.obj
+         Release\truetype.obj
+         Release\type1.obj
+         Release\type42.obj
+         Release\winfnt.obj
+         Release\main.obj
          Release\batchrenderer2d.obj
          Release\buffer.obj
          Release\indexbuffer.obj
          Release\vertexarray.obj
+         Release\label.obj
+         Release\group.obj
          Release\layer.obj
          Release\tilelayer.obj
-         Release\renderable2d.obj
          Release\shader.obj
          Release\simplerenderer2d.obj
          Release\sprite.obj
          Release\static_sprite.obj
+         Release\texture.obj
          Release\window.obj
          Release\mat4.obj
          Release\vec2.obj
@@ -52,4 +77,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.25
+Time Elapsed 00:00:03.87
